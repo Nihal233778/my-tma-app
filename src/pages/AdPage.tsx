@@ -7,7 +7,6 @@ const AdPage: React.FC = () => {
     alert('🎉 You earned a reward for clicking!')
   }
 
-  // Remove this function if not used - or keep it for fullscreen ads
   const onAdsNotFound = () => {
     console.log('No ads found')
     alert('No ads available right now. Try again later!')
@@ -52,7 +51,7 @@ const AdPage: React.FC = () => {
         <TadsWidget 
           id="9700"
           type="static" 
-          debug={true}
+          debug={false}   // ← CHANGE THIS TO false
           onClickReward={rewardUserByClick} 
           onAdsNotFound={onAdsNotFound} 
         />
@@ -62,3 +61,5 @@ const AdPage: React.FC = () => {
 }
 
 export default AdPage
+
+  
