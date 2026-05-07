@@ -15,7 +15,7 @@ const AdPage: React.FC = () => {
 
   const showFullscreenAd = () => {
     renderTadsWidget({
-      id: 'YOUR_WIDGET_ID_HERE',
+      id: '9699',
       type: 'fullscreen',
     })
   }
@@ -50,7 +50,7 @@ const AdPage: React.FC = () => {
       }}>
         <h3>Sponsored Content:</h3>
         <TadsWidget 
-          id="YOUR_WIDGET_ID_HERE"
+          id="9700"
           type="static" 
           debug={true}
           onClickReward={rewardUserByClick} 
