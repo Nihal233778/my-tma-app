@@ -7,11 +7,7 @@ const AdPage: React.FC = () => {
     alert('🎉 You earned a reward for clicking!')
   }
 
-  const rewardUserByShow = () => {
-    console.log('User rewarded for watching ad')
-    alert('🎁 Thanks for watching! You got 100 coins!')
-  }
-
+  // Remove this function if not used - or keep it for fullscreen ads
   const onAdsNotFound = () => {
     console.log('No ads found')
     alert('No ads available right now. Try again later!')
@@ -19,7 +15,7 @@ const AdPage: React.FC = () => {
 
   const showFullscreenAd = () => {
     renderTadsWidget({
-      id: 'YOUR_WIDGET_ID_HERE',  // Replace with your real ID from tads.me
+      id: 'YOUR_WIDGET_ID_HERE',
       type: 'fullscreen',
     })
   }
@@ -54,7 +50,7 @@ const AdPage: React.FC = () => {
       }}>
         <h3>Sponsored Content:</h3>
         <TadsWidget 
-          id="YOUR_WIDGET_ID_HERE"  // Replace with your real ID
+          id="YOUR_WIDGET_ID_HERE"
           type="static" 
           debug={true}
           onClickReward={rewardUserByClick} 
@@ -66,4 +62,3 @@ const AdPage: React.FC = () => {
 }
 
 export default AdPage
-
